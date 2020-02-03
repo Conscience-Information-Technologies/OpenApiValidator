@@ -1,0 +1,37 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "product",
+	"title": "Product",
+	"type": "object",
+	"properties": {
+		"productId": {
+			"type": "string",
+			"pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+		},
+		"productSku": {
+			"type": "string",
+			"pattern": "(?=\\S*[A-Z])(?=\\S*\\d)[A-Z\\d]{12,}"
+		},
+		"productName": {
+			"type": "string",
+			"minLength": 3,
+			"maxLength": 500
+		},
+		"price": {
+			"type": "number",
+			"exclusiveMinimum": 0
+		},
+		"tags": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"minItems": 1,
+			"uniqueItems": true
+		},
+		"dimensions": {
+			"$ref": "dimensions.schema.json"
+		}
+	},
+	"required": [ "productId", "productName", "price" ]
+}

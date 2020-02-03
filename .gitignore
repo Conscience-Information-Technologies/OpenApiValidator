@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Manatee.Json
+/.vs/OpenApiValidatorWebRequestDemo
+/.vs/config/applicationhost.config
+/Conscience.Exceptions/bin
+/Conscience.Exceptions/obj
+/Conscience.Extensions/bin
+/Conscience.Extensions/obj
+/Conscience.Logs/bin
+/Conscience.Logs/obj
+/Conscience.OpenApiValidator/bin
+/Conscience.OpenApiValidator/obj
+/OpenApiValidatorWebRequest/bin
+/OpenApiValidatorWebRequest/obj

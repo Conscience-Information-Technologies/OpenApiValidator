@@ -1,0 +1,111 @@
+openapi: 3.0.0
+info:
+  title: Sample Product OpenApi Definition.
+  version: 1.0.0.0
+paths:
+  /api/product:
+    parameters:
+      - name: apiversion
+        in: header
+        required: true
+        schema:
+          type: string
+          enum: ["1.0.0.0", "1.0.1.0"]
+    get:
+      parameters:
+        - name: productid
+          in: query
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        200:
+          description: A User object
+          $ref: "#/components/schemas/product"
+    put:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                productId:
+                  type: string
+                  pattern: "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+                productSku:
+                  type: string
+                  pattern: "(?=\\S*[A-Z])(?=\\S*\\d)[A-Z\\d]{12,}"
+                productName:
+                  type: string
+                  minLength: 3
+                  maxLength: 500
+                price:
+                  type: number
+                tags:
+                  type: array
+                  items:
+                    type: string
+                    minItems: 1
+                    uniqueItems: true
+              required:
+                - "productName"
+                - "price"
+      responses:
+        200:
+          description: A User object
+          $ref: "#/components/schemas/response"
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/product"
+      responses:
+        200:
+          description: A User object
+          $ref: "#/components/schemas/response"          
+components:
+  schemas:
+    product: 
+      type: object
+      properties:
+        productId:
+          type: string
+          pattern: "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+        productSku:
+          type: string
+          pattern: "(?=\\S*[A-Z])(?=\\S*\\d)[A-Z\\d]{12,}"
+        productName:
+          type: string
+          minLength: 3
+          maxLength: 500
+        price:
+          type: number
+        tags:
+          type: array
+          items:
+            type: string
+            minItems: 1
+            uniqueItems: true
+      required:
+        - productName
+        - price
+    dimension: 
+      type: object
+      properties:
+        length:
+          type: number
+        width:
+          type: number
+        height:
+          type: number
+      required:
+        - length
+        - width
+        - height
+    response: 
+      type: object
+      properties:
+        message:
+          type: string

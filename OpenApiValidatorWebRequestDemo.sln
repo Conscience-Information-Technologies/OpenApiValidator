@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conscience.OpenApiValidator", "Conscience.OpenApiValidator\Conscience.OpenApiValidator.csproj", "{69C29864-B32F-4040-9C55-66B152198EE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manatee.Json", "Manatee.Json\Manatee.Json.csproj", "{ED1B925D-F058-47BE-AE51-FC7A855BE9E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conscience.Logging", "Conscience.Logs\Conscience.Logging.csproj", "{B2217168-32C9-4FCF-A84D-89C3A4CA69AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions", "Conscience.Extensions\Extensions.csproj", "{2E5AD809-88C2-4D02-AEAC-BCF88BA3CF65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conscience.Exceptions", "Conscience.Exceptions\Conscience.Exceptions.csproj", "{036C2DC9-4F95-4998-8951-EFF609F80129}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenApiValidatorWebRequest", "OpenApiValidatorWebRequest\OpenApiValidatorWebRequest.csproj", "{A1F8A515-83B4-43A9-A74D-F042E95985B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69C29864-B32F-4040-9C55-66B152198EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C29864-B32F-4040-9C55-66B152198EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C29864-B32F-4040-9C55-66B152198EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C29864-B32F-4040-9C55-66B152198EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED1B925D-F058-47BE-AE51-FC7A855BE9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1B925D-F058-47BE-AE51-FC7A855BE9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1B925D-F058-47BE-AE51-FC7A855BE9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1B925D-F058-47BE-AE51-FC7A855BE9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2217168-32C9-4FCF-A84D-89C3A4CA69AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2217168-32C9-4FCF-A84D-89C3A4CA69AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2217168-32C9-4FCF-A84D-89C3A4CA69AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2217168-32C9-4FCF-A84D-89C3A4CA69AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5AD809-88C2-4D02-AEAC-BCF88BA3CF65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5AD809-88C2-4D02-AEAC-BCF88BA3CF65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5AD809-88C2-4D02-AEAC-BCF88BA3CF65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5AD809-88C2-4D02-AEAC-BCF88BA3CF65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036C2DC9-4F95-4998-8951-EFF609F80129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036C2DC9-4F95-4998-8951-EFF609F80129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036C2DC9-4F95-4998-8951-EFF609F80129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036C2DC9-4F95-4998-8951-EFF609F80129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F8A515-83B4-43A9-A74D-F042E95985B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F8A515-83B4-43A9-A74D-F042E95985B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F8A515-83B4-43A9-A74D-F042E95985B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F8A515-83B4-43A9-A74D-F042E95985B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDC077AF-D759-4397-BEF3-EFFE24406386}
+	EndGlobalSection
+EndGlobal
