@@ -3,8 +3,7 @@
 ################################################################################
 
 /Manatee.Json
-/.vs/OpenApiValidatorWebRequestDemo
-/.vs/config/applicationhost.config
+/.vs
 /Conscience.Exceptions/bin
 /Conscience.Exceptions/obj
 /Conscience.Extensions/bin
