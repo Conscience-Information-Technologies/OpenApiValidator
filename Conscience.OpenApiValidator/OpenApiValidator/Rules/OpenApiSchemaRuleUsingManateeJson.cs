@@ -83,17 +83,17 @@ namespace Conscience.OpenApiValidator
 			return that;
 		}
 
-		public override IValidate Copy(IValidate other)
-		{
-			if(other is OpenApiSchemaRuleUsingManateeJson)
-			{
-				base.Copy(other);
-				var thatRef = other as OpenApiSchemaRuleUsingManateeJson;
-				thatRef._jsonSchema=this._jsonSchema;
-				return thatRef;
-			}
+		//public override IValidate Copy(IValidate other)
+		//{
+		//	if(other is OpenApiSchemaRuleUsingManateeJson)
+		//	{
+		//		base.Copy(other);
+		//		var thatRef = other as OpenApiSchemaRuleUsingManateeJson;
+		//		thatRef._jsonSchema=this._jsonSchema;
+		//		return thatRef;
+		//	}
 
-			return other;
-		}
+		//	return other;
+		//}
 	}
 }

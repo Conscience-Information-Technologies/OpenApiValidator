@@ -96,8 +96,23 @@ namespace Conscience.OpenApiValidator
 		public override Object Clone()
 		{
 			var that = new OpenApiParameterRule(this.RequestElementName, this.InParameterLocation, this._context, this._openApiElement);
-			base.Copy(that);
+			this.Copy(that);
 			return that;
+		}
+
+		public override IValidate Copy(IValidate other)
+		{
+			if(other is OpenApiParameterRule)
+			{
+				var otherRef = other as OpenApiParameterRule;
+
+				if(this._openApiSchemaRule!=null)
+					otherRef._openApiSchemaRule=this._openApiSchemaRule as OpenApiSchemaRuleUsingManateeJson;
+
+				base.Copy(other);
+				return otherRef;
+			}
+			return other;
 		}
 	}
 }
