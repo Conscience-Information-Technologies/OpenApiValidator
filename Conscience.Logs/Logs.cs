@@ -72,7 +72,7 @@ namespace Conscience.Logging
 
 		public new void Add(Log log)
 		{
-			if(log==null)
+			if (log == null || (log.Message == null && log.Exception == null))
 				return;
 
 			if(log.LogNature==LogNature.EXCEPTION)
@@ -118,4 +118,5 @@ namespace Conscience.Logging
 	//	Exception = 110,
 	//}
 
+	
 }
